@@ -1,0 +1,32 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 环境变量
+.env
+.env.local
+
+# 向量数据库 / 数据文件
+chroma_db/
+data/*.db
+data/*.sqlite
+
+# 临时文件
+temp_*
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
