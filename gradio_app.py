@@ -53,9 +53,9 @@ def batch_multimodal_qa(files, question):
             return "\n".join(outputs)  
         
         else:
-            return f"请求失败，状态码 {resp.status_code}", []
+            return f"请求失败，状态码 {resp.status_code}"
     except Exception as e:
-        return f"请求异常: {str(e)}", []
+        return f"请求异常: {str(e)}"
     finally:
         for _, (_, f, _) in files_list:
             f.close()
@@ -89,7 +89,7 @@ with gr.Blocks(title="多模态智能问答系统") as demo:
        
 
     #==================第三个标签页==================
-    #新增一个“批量图文问答”标签页
+    #新增“批量图文问答”标签页
     with gr.Tab("批量图文问答"):
         with gr.Row():
             with gr.Column():
