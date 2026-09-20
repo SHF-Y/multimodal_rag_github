@@ -120,7 +120,7 @@ npm run dev
 ```bash
 docker compose up -d --build
 ```
-![图片](<Docker DeskTop截图.jpg>)
+
 ---
 
 
