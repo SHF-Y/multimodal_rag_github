@@ -1,0 +1,70 @@
+# ===================== Python 后端 =====================
+# Python 字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# pytest 缓存与覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+# 构建产物
+build/
+dist-packages/
+
+# ===================== Node / 前端 =====================
+# 依赖目录（npm install 生成，可随时重建，绝不提交）
+node_modules/
+
+# 前端打包产物
+dist/
+
+# npm 调试日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===================== 密钥与本地配置 =====================
+# 环境变量文件：含 DASHSCOPE_API_KEY 等密钥，绝不提交
+.env
+.env.local
+.env.*.local
+
+# 本地配置文件（含本地路径/账号等敏感信息）
+*.local
+
+# ===================== 运行期生成物（可重建） =====================
+# ChromaDB 向量库（由 data/pdfs 重建，体积大）
+chroma_db/
+# 临时目录 / 运行时产物
+tmp/
+temp/
+
+# 日志目录与日志文件
+logs/
+debug.log
+*.log
+
+# 测试产物
+test-results/
+coverage.xml
+
+# Windows 本地 Redis 运行包（部署用 Docker 镜像替代）
+redis-server/
+
+# ===================== IDE / 系统 =====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

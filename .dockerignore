@@ -1,0 +1,57 @@
+
+# ==============================================
+
+# ---------- Python 编译与缓存文件 ----------
+__pycache__          
+*.pyc                
+*.pyo                
+*.pyd                
+.Python              
+*.so                 
+*.egg-info           
+dist                 
+build                
+
+# ---------- 版本控制文件 ----------
+.git                 
+.gitignore           
+
+# ---------- 虚拟环境 ----------
+.venv                
+venv                 
+env                  
+
+# ---------- 文档文件 ----------
+*.md                 
+!README.md           
+
+# ---------- 数据文件 ----------
+chroma_db/*.bin      
+chroma_db/*.sqlite3  
+chroma_db/*/         
+data/pdfs/*.pdf      
+data/images/*.jpg    
+data/images/*.png    
+
+# ---------- 日志文件 ----------
+logs/                
+*.log                
+
+# ---------- IDE 配置 ----------
+.vscode/             
+.idea/               
+
+# ---------- 临时和备份文件 ----------
+*.tmp                
+*.bak                
+
+# ---------- 前端依赖 ----------
+node_modules
+
+redis-server/   
+src/                 
+index.html           
+package.json         
+package-lock.json    
+vite.config.js       
+dist/                
