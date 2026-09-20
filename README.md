@@ -1,4 +1,4 @@
-# 多模态智能问答系统（工业质检 RAG）
+# 多模态智能问答系统
 
 > 面向**变电设备不规则视觉缺陷检测**场景的多模态 RAG 智能问答系统：以 PDF 技术文档为知识库构建混合检索，结合视觉大模型与工具调用，支持纯文本问答、流式输出、单图/多图问答与批量缺陷统计。
 
@@ -36,7 +36,7 @@ multimodal_rag/
 │
 ├── core/                        # 核心模块
 │   ├── __init__.py
-│   ├── cache_manager.py         #   Redis / 内存双缓存（自动降级）
+│   ├── cache_manager.py         #   Redis / 内存双缓存
 │   ├── config.py                #   配置常量 + LLM / Embedding 
 │   ├── hybrid_retriever.py      #   向量 + BM25 混合检索
 │   ├── query_rewriter.py        #   查询改写
@@ -60,7 +60,7 @@ multimodal_rag/
 │
 ├── tests/                       # pytest 测试
 │   ├── test_api.py              #   API 集成测试
-│   ├── test_rag_module.py       #   RAG 模块（含 format_docs / 检索器单例）
+│   ├── test_rag_module.py       #   RAG 模块
 │   ├── test_hybrid_retriever.py #   混合检索
 │   ├── test_reranker.py         #   精排
 │   ├── test_query_rewriter.py   #   查询改写
@@ -72,7 +72,7 @@ multimodal_rag/
 │   ├── test_vectorstore_manager.py  # 向量库管理
 │   └── test_tools_module.py     #   工具模块
 │
-├── evaluation/                  # 离线评测（检索 / RAG / 视觉）
+├── evaluation/                  # 离线评测
 │   ├── __init__.py
 │   ├── run_evaluation.py        #   评测入口
 │   ├── retrieval_eval.py        #   检索质量评测
@@ -82,7 +82,7 @@ multimodal_rag/
 |
 ├── chroma_db/                   # 向量库持久化目录
 ├── logs/                        # 日志目录
-└── redis-server/                # Windows 本地 Redis 运行包
+└── redis-server/                # 本地 Redis 运行包
 ```
 
 ---
